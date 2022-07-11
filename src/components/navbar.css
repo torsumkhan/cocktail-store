@@ -1,0 +1,40 @@
+.navbar{
+    background: #6c584c;
+    padding: 25px;
+
+}
+
+.navbar h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.navbar nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a.brand {
+    text-decoration: none;
+    color: white
+
+}
+
+.abt-cnt{
+    display: flex;
+    gap: 24px
+}
+
+.abt-cnt h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.abt-cnt a{
+    text-decoration: none;
+    color: white
+}
