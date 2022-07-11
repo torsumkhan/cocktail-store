@@ -5,12 +5,14 @@ import "./cocktail.css";
 const Cocktail = ({ id, name, image, info, glass }) => {
   return (
     <div className="cocktail-card">
-      <img classname="cocktail-img" src={image} alt={name} />
+      <img className="cocktail-img" src={image} alt={name} />
       <div className="cocktail-info">
         <h3>{name}</h3>
         <h4>{glass}</h4>
         <p>{info}</p>
-        <Link to={`/cocktail/${id}`}>Details</Link>
+        <Link to={`/cocktail/${id}`} className="details">
+          Details
+        </Link>
       </div>
     </div>
   );

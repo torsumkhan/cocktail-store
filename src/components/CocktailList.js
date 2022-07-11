@@ -19,8 +19,8 @@ const CocktailList = () => {
       <div className="cocktail-list">
         {cocktails.map((cocktail) => {
           return (
-            <div>
-              <Cocktail key={cocktail.id} {...cocktail} />
+            <div key={cocktail.id}>
+              <Cocktail {...cocktail} />
             </div>
           );
         })}
