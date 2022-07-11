@@ -1,0 +1,17 @@
+.cocktail-card img{
+    width: 350px;
+    border-radius: 6px;
+}
+
+.cocktail-card{
+    background: white;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.cocktail-info{
+    text-align: left;
+}

@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import { cocktailContext } from "../context";
 import Loading from "./Loading";
+import Cocktail from "./Cocktail";
+import "./cocktaillist.css";
 
 const CocktailList = () => {
   const { loading, cocktails } = useContext(cocktailContext);
-  console.log(cocktails);
 
   if (loading) {
     return <Loading />;
@@ -13,8 +14,17 @@ const CocktailList = () => {
     return <h2>No match found</h2>;
   }
   return (
-    <div className="search">
-      <h2>Cocktail List components</h2>
+    <div>
+      <h1>Cocktail List</h1>
+      <div className="cocktail-list">
+        {cocktails.map((cocktail) => {
+          return (
+            <div>
+              <Cocktail key={cocktail.id} {...cocktail} />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

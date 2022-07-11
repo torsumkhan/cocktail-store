@@ -5,8 +5,9 @@ import "./home.css";
 
 const Home = () => {
   return (
-    <div>
+    <div className="main-container">
       <SearchForm />
+      <h1>🍸</h1>
       <CocktailList />
     </div>
   );
